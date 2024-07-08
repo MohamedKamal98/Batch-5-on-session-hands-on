@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/StepUP/Testing/Batch 5/Automation/Project/Batch-5-on-session-hands-on">
+        <classes>
+            <class name="selenium_practice.FirstClass">
+                <methods>
+                    <include name="start"/>
+                </methods>
+            </class>
+            <class name="selenium_practice.Locators">
+                <methods>
+                    <include name="editAndDeleteFromTable1"/>
+                    <include name="editAndDeleteFromTable2"/>
+                    <include name="editAndDeleteFromTableWithEmail"/>
+                    <include name="verifyLinks"/>
+                </methods>
+            </class>
+            <class name="selenium_practice.UserInteractions">
+                <methods>
+                    <include name="doubleClick"/>
+                    <include name="rightClick"/>
+                    <include name="testHover"/>
+                    <include name="testDragAndDrop"/>
+                    <include name="testAlert"/>
+                    <include name="frameTest"/>
+                    <include name="testFrames"/>
+                    <include name="scrollByPixel"/>
+                    <include name="scrollByVisibleElement"/>
+                    <include name="scrollByPage"/>
+                    <include name="ScrollHorizontally"/>
+                    <include name="keyDown"/>
+                    <include name="keyUp"/>
+                    <include name="copyAndPaste"/>
+                    <include name="keyboardActions"/>
+                </methods>
+            </class>
+            <class name="testng_practice2.SecondTest">
+                <methods>
+                    <include name="test"/>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="testng_practice.FirstTestNGTest">
+                <methods>
+                    <include name="Test1"/>
+                    <include name="Test2"/>
+                    <include name="start"/>
+                    <include name="end"/>
+                </methods>
+            </class>
+            <class name="testng_practice.SecondTestNGTest">
+                <methods>
+                    <include name="test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="regression">
+        <classes>
+            <class name="selenium_practice.FirstClass"></class>
+        </classes>
+    </test>
+</suite>
